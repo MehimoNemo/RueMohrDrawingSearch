@@ -1,0 +1,31 @@
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(8, 60px);
+grid-template-rows: repeat(8, 60px);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: 50px auto;
+justify-self: center;
+z-index: 999;
+}
+
+.grid-tile{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    background: var(--bs-dark);
+    border: 5px solid var(--bs-gray);
+    border-radius: 60px;
+}
+
+.grid-tile:hover{
+    border: white solid 5px;
+    background: var(--bs-dark-text-emphasis);
+}
+
+.on{
+    background: cyan !important;
+    border: 5px solid rgb(61, 133, 133) !important;
+}
